@@ -1,0 +1,38 @@
+Approach:
+    1. Libraries:
+        Used different libraries such as seaborn, tensorflow, numpy, pandas etc for data handling, visualization and machine learning.
+
+    2. Data:
+        - Loaded the dataset from a csv file.
+        - Preprocessed text by tokenizing and padding.
+        - Used GloVe embeddings to convert words into vectors.
+        - Encoded category labels for the model.
+
+    3. Visualization:
+        - Plotted category distribution, word cloud, word frequencies and description lengths to get insights on the dataset.
+
+    4. Model:
+        - Built a neural network with embedding, LSTM and dense layers.
+        - Trained the model on and evaluated its performance using the classification metrics.
+
+    5. Prediction:
+        - Created a function to classify the description into the product category and outputs the confidence score as well.
+        - Tested the model on a sample test.csv and displayed its predictions.
+
+Assumptions:
+    - The descriptions are clean and consistent.
+    - GloVe embeddings capture enough detail for the task.
+    - 80-20 split for training and validation is appropriate. 
+
+Limitations:
+    - The dataset is small in size (only 40 rows).
+    - Class imbalance might hinder performance.
+
+Improvements:
+    - Increase dataset size for better model accuracy.
+    - Fine tune pre-trained models to achieve better accuracy.
+
+Instructions for running the code:
+    - Install the necessary libraries by:
+        pip install -r requirements.txt
+    - Place your dataset file (dummy_products.csv) and GloVe embeddings file (glove.6B.100d.txt) in the appropriate directory.
